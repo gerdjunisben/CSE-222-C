@@ -1,0 +1,6 @@
+﻿  project1.c
+C:\Users\green\Documents\CSE222\CSE-222-C\42723\42723\header.h(7,1): warning C4005: '_DEBUG': macro redefinition
+C:\Users\green\Documents\CSE222\CSE-222-C\42723\42723\header.h(7,1): message : '_DEBUG' previously declared on the command line
+C:\Users\green\Documents\CSE222\CSE-222-C\42723\42723\project1.c(23,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\green\Documents\CSE222\CSE-222-C\42723\42723\project1.c(23,9): message : consider using '%zd' in the format string
+  42723.vcxproj -> C:\Users\green\Documents\CSE222\CSE-222-C\42723\x64\Debug\42723.exe
