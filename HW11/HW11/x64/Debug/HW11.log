@@ -1,18 +1,2 @@
-﻿  FileTwo.c
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(9,31): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(9,35): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(9,39): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(10,31): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(10,35): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(10,39): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(11,31): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(11,35): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(11,39): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(12,31): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(12,35): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(12,39): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(16,50): warning C4554: '^': check operator precedence for possible error; use parentheses to clarify precedence
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(16,95): warning C4554: '^': check operator precedence for possible error; use parentheses to clarify precedence
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(13,41): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\green\Documents\CSE222\CSE-222-C\HW11\HW11\FileTwo.c(14,41): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+﻿  Main.c
   HW11.vcxproj -> C:\Users\green\Documents\CSE222\CSE-222-C\HW11\x64\Debug\HW11.exe

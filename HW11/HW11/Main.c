@@ -5,7 +5,7 @@
 int main(void)
 {
 	bool b1 = isRightTriangle(0, 0, 2, 0, 0, 2);
-	bool b2 = straightLine(0, 0, 1, 1, 9, 9);
+	bool b2 = straightLine(0, 0, 2, 2, 9, 9);
 	if (b1 && b2)
 	{
 		printf("They both worked");

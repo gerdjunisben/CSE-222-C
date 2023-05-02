@@ -26,12 +26,12 @@ bool straightLine(double x0, double y0, double x1, double y1, double x2, double 
 {
 	bool res = false;
 
-	double d1 = (calculateDistance(x0, y0, x1, y1));
-	double d2 = (calculateDistance(x1, y1, x2, y2));
-	double d3 = (calculateDistance(x2, y2, x0, y0));
-	
+	double d1 = (calculateDistance(x0, 0, x1, 0));
+	double d2 = (calculateDistance(x0, 0, x2, 0));
+	double d3 = (calculateDistance(0, y0, 0, y1));
+	double d4 = (calculateDistance(0, y0, 0, y2));
 
-	if (d1 + d2 ==d3 || d2+ d3 ==d1  || d1+d3==d2)
+	if (tan(d3/d1)==tan(d4/d2))
 	{
 		res = true;
 	}
