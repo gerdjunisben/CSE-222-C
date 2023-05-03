@@ -34,6 +34,6 @@ int findSmallest(int x, int y, int z)
 
 double calculateDistance(double x0, double y0, double x1, double y1)
 {
-	return sqrt((pow((x0 + x1), 2) + pow((y0 + y1), 2)));
+	return sqrt((pow((x0 - x1), 2) + pow((y0 - y1), 2)));
 }
 

@@ -6,14 +6,11 @@ bool isRightTriangle(double x0, double y0, double x1, double y1, double x2, doub
 {
 	bool res = false;
 
-	int greatestX = findGreatest(x0, x1, x2);
-	int greatestY = findGreatest(y0, y1, y2);
-	int smallestX = findSmallest(x0, x1, x2);
-	int smallestY = findSmallest(y0, y1, y2);
-	int middleX = x0 + x1 + x2 - greatestX - smallestX;
-	int middleY = y0 + y1 + y2 - greatestY - smallestY;
+	double d1 = ((int)(pow(calculateDistance(x0, y0, x1, x1),2) * 10000 + 0.5)) / 10000;
+	double d2 = ((int)(pow(calculateDistance(x1, y1, x2, x2),2) * 10000 + 0.5)) / 10000;
+	double d3 = ((int)(pow(calculateDistance(x2, y2, x0, y0),2) * 10000 + 0.5)) / 10000;
 
-	if ((middleX == greatestX ^ middleX == smallestX) && (middleY==greatestY ^ middleY==smallestY))
+	if (d1+d2 == d3 || d2+d3 == d1 || d1+d3 == d2)
 	{
 		res = true;
 	}
