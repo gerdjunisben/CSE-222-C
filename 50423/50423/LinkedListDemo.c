@@ -15,6 +15,8 @@ int main(int argc, char* argv[])
 	printf("\n");
 	list = deleteNode(list, 9);
 	display(list);
+	struct Node* n = searchNode(list,5);
+	printf("\n%d", n->key);
 	deleteList(list);
 	return 0;
 }
