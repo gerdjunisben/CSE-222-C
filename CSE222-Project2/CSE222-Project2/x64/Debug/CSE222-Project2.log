@@ -1,2 +1,3 @@
-﻿  Demo.c
+﻿  MyBST.c
+C:\Users\green\Documents\CSE222\CSE-222-C\CSE222-Project2\CSE222-Project2\MyBST.c(62): warning C4715: 'findNode': not all control paths return a value
   CSE222-Project2.vcxproj -> C:\Users\green\Documents\CSE222\CSE-222-C\CSE222-Project2\x64\Debug\CSE222-Project2.exe

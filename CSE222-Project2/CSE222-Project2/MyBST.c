@@ -20,52 +20,45 @@ struct Node* createNode(int value)
 
 struct Node* insertNode(struct Node* tree, int value)
 {
-	struct Node* temp = createNode(value);
 	if (tree == NULL)
 	{
-		return temp;
+		//printf("placed:%d\n",value);
+		tree = createNode(value);
 	}
-	struct Node* previous = NULL;
-	struct Node* current = tree;
-	while (current != NULL)
+
+	if (value < tree->value)
 	{
-		previous = current;
-		if (current->value > value)
-		{
-			current = current->left;
-		}
-		else
-		{
-			current = current->right;
-		}
+		//printf("left ");
+		tree->left = insertNode(tree->left, value);
 	}
-	if (previous->value > value)
-		previous->left = temp;
-	else
-		previous->right = temp;
+	else if(value>tree->value)
+	{
+		//printf("right ");
+		tree->right = insertNode(tree->right, value);
+	}
 
 	return tree;
 	
 }
 
 struct Node* findNode(struct Node* tree, int value) {
-	struct Node* current = tree;
-	while (current != NULL)
+	if(tree == NULL)
 	{
-		if (current->value > value)
-		{
-			current = current->left;
-		}
-		else if(current->value < value)
-		{
-			current = current->right;
-		}
-		else
-		{
-			return current;
-		}
+		return NULL;
 	}
-	return NULL;
+
+	if (value < tree->value)
+	{
+		tree->left = findNode(tree->left, value);
+	}
+	else if (value > tree->value)
+	{
+		tree->right = findNode(tree->right, value);
+	}
+	else
+	{
+		return tree;
+	}
 }
 
 struct Node* deleteNode(struct Node* tree, int value)
