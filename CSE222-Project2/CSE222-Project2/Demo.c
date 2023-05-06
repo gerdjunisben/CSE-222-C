@@ -7,11 +7,11 @@ int main(int argc, char* argv[])
 {
 	struct Node* tree = NULL;
 	
-	tree = insertNode(tree,3);
-	tree = insertNode(tree, 4);
+	tree = insertNode(tree,4);
+	tree = insertNode(tree, 5);
 	tree = insertNode(tree, 1);
 	tree = insertNode(tree, 2);
-	tree = insertNode(tree, 2);
+	tree = insertNode(tree, 3);
 
 	printInOrder(tree);
 	printf("\n");

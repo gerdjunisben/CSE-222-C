@@ -156,6 +156,6 @@ void deleteTree(struct Node* tree)
 
 	deleteTree(tree->left);
 	deleteTree(tree->right);
-
+	//printf("\n%d is freed", tree->value); for testing purposes to make sure the memory is properly freed
 	free(tree);
 }
