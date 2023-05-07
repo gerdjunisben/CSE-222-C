@@ -22,18 +22,18 @@ struct Node* insertNode(struct Node* tree, int value)
 {
 	if (tree == NULL)
 	{
-		//printf("placed:%d\n",value);
+		printf("placed:%d\n",value);
 		tree = createNode(value);
 	}
 
 	if (value < tree->value)
 	{
-		//printf("left ");
+		printf("left ");
 		tree->left = insertNode(tree->left, value);
 	}
 	else if(value>tree->value)
 	{
-		//printf("right ");
+		printf("right ");
 		tree->right = insertNode(tree->right, value);
 	}
 
