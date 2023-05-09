@@ -1,8 +1,7 @@
-#include "LinkedList.h"
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
-
+#include "LinkedList.h"
 
 struct Node* createNode(int value)
 {
@@ -108,7 +107,7 @@ void display(struct Node* list)
 	}
 }
 
-bool deleteList(struct Node* list)
+bool deleteList(struct Node** list)//a pointer to a pointer so the pointer to the list is deleted as well
 {
 	struct Node* ptr = list;
 	while (ptr->ptr != NULL) //if the current has a next node delete the current node and set current to next
@@ -118,5 +117,6 @@ bool deleteList(struct Node* list)
 		ptr = ptrN;
 	}
 	free(ptr);//free the one remaining Node
+	*list = NULL;
 	return true;
 }

@@ -140,15 +140,16 @@ void printPostOrder(struct Node* tree)
 	printf(" %d ", tree->value);
 }
 
-void deleteTree(struct Node* tree)
+void deleteTree(struct Node** tree)
 {
 	if (tree == NULL)
 	{
 		return;
 	}
 
-	deleteTree(tree->left);
-	deleteTree(tree->right);
+	deleteTree((*tree)->left);
+	deleteTree((*tree)->right);
 	//printf("\n%d is freed", tree->value); for testing purposes to make sure the memory is properly freed
 	free(tree);
+
 }

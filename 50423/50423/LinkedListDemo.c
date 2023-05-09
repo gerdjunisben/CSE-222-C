@@ -1,5 +1,5 @@
-#include "LinkedList.h"
 #include <stdio.h>
+#include "LinkedList.h"
 
 int main(int argc, char* argv[])
 {
@@ -17,6 +17,6 @@ int main(int argc, char* argv[])
 	display(list);
 	struct Node* n = searchNode(list,5);
 	printf("\n%d", n->key);
-	deleteList(list);
+	deleteList(&list);
 	return 0;
 }

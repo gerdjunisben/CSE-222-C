@@ -19,6 +19,6 @@ extern struct Node* addNode(struct Node*,int);
 extern struct Node* deleteNode(struct Node*,int);
 extern struct Node* searchNode(struct Node*, int);
 extern void display(struct Node*);
-extern bool deleteList(struct Node*);
+extern bool deleteList(struct Node**);
 
 

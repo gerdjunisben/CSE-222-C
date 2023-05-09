@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
 
 	
 
-	deleteTree(tree);
+	deleteTree(&tree);
 
 	return 0;
 }
