@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	tree = insertNode(tree, 1);
 	tree = insertNode(tree, 2);
 	tree = insertNode(tree, 3);
-	tree = insertNode(tree, 4);//numbers already in the tree will not be added
+	tree = insertNode(tree, 4);
 
 	tree = deleteNode(tree, 2);
 	tree = deleteNode(tree, 20);

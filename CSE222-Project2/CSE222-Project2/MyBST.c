@@ -22,18 +22,16 @@ struct Node* insertNode(struct Node* tree, int value)
 {
 	if (tree == NULL)
 	{
-		printf("placed:%d\n",value);
 		tree = createNode(value);
 	}
-
-	if (value < tree->value)
+	else if (value < tree->value)
 	{
-		printf("left ");
+		//printf("left ");
 		tree->left = insertNode(tree->left, value);
 	}
-	else if(value>tree->value)
+	else if(value>=tree->value)
 	{
-		printf("right ");
+		//printf("right ");
 		tree->right = insertNode(tree->right, value);
 	}
 
@@ -46,7 +44,6 @@ struct Node* findNode(struct Node* tree, int value) {
 	{
 		return NULL;
 	}
-
 	if (value < tree->value)
 	{
 		tree->left = findNode(tree->left, value);
@@ -142,14 +139,14 @@ void printPostOrder(struct Node* tree)
 
 void deleteTree(struct Node** tree)
 {
-	if (tree == NULL)
+	if ((*tree) == NULL)
 	{
 		return;
 	}
 
-	deleteTree((*tree)->left);
-	deleteTree((*tree)->right);
-	//printf("\n%d is freed", tree->value); for testing purposes to make sure the memory is properly freed
-	free(tree);
+	deleteTree(&((*tree)->left));
+	deleteTree(&((*tree)->right));
+	//printf("\n%d is freed", (*tree)->value); //for testing purposes to make sure the memory is properly freed
+	free(*tree);
 
 }
