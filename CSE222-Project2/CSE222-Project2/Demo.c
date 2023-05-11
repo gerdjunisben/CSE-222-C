@@ -21,8 +21,11 @@ int main(int argc, char* argv[])
 	tree = insertNode(tree, 0);
 	tree = insertNode(tree, 2);
 	tree = insertNode(tree, 3);
+
+	tree = deleteNode(tree, 10);
+	tree = deleteNode(tree, 0);
 	
-	struct Node* node = findNode(tree, 4);
+	struct Node* node = findNode(tree, 5);
 	printf("\n%d",node->value);
 	printf("\n");
 

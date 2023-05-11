@@ -2,26 +2,27 @@
 #include "MyClass.h"
 
 extern void swap(int&, int&);
+extern void demoRef(MyClass&);
 
 int main(void)
 {
 	std::cout << "Hello CPP " << 10 << "<--number" << std::endl;//std is the namespace, cout and endl are classes from std. cout means characters out and endl means end line
 
 	
-	MyClass cls;//creates new MyClass
+	//MyClass cls;//creates new MyClass
 
-	MyClass* pCls = nullptr;
-	pCls = &cls;//pCls points to cls
+	//MyClass* pCls = nullptr;
+	//pCls = &cls;//pCls points to cls
 
 	MyClass* pCls2 = new MyClass();//pCls2 points to a new MyClass
 
-	demoRef(cls);
-	
+	//demoRef(cls);
+	/*
 	if (pCls != nullptr)
 	{
 		delete pCls;
 		pCls = nullptr;
-	}
+	}*/
 	if (pCls2!= nullptr)
 	{
 		delete pCls2;
@@ -40,10 +41,22 @@ int main(void)
 
 	std::cout << a << " " << b << std::endl;
 
+
+	MyClass c1;
+	MyClass c2(10, 20);
+
+	MyClass c3 = c1 + c2;//we overloaded = and +
+
+	c3++;
+	++c3;
+
+	std::cout << c3 << std::endl;
 	
 
 	return 0;
 }
+
+
 
 void demoRef(MyClass& m)//not including the & will make it create a new object each time it's called, by using the & we reference the object passed rather than making a new one
 {

@@ -40,21 +40,17 @@ struct Node* insertNode(struct Node* tree, int value)
 }
 
 struct Node* findNode(struct Node* tree, int value) {
-	if(tree == NULL)
+	if(tree == NULL || tree->value == value)
 	{
-		return NULL;
+		return tree;
 	}
-	if (value < tree->value)
+	else if (value < tree->value)
 	{
 		tree->left = findNode(tree->left, value);
 	}
 	else if (value > tree->value)
 	{
 		tree->right = findNode(tree->right, value);
-	}
-	else
-	{
-		return tree;
 	}
 }
 
@@ -73,8 +69,12 @@ struct Node* deleteNode(struct Node* tree, int value)
 	}
 	else
 	{
-
-		if (tree->left == NULL)
+		if (tree->left == NULL && tree->right == NULL)
+		{
+			free(tree);
+			return NULL;
+		}
+		else if (tree->left == NULL)
 		{
 			struct Node* temp = tree->right;
 			free(tree);
