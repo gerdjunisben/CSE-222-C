@@ -3,6 +3,7 @@
 
 int main(int argc, char* argv[])
 {
+	/*
 	struct Node* list = NULL;
 	list = addNode(list, 5);
 	list = addNode(list, 8);
@@ -17,6 +18,12 @@ int main(int argc, char* argv[])
 	display(list);
 	struct Node* n = searchNode(list,5);
 	printf("\n%d", n->key);
-	deleteList(&list);
+	deleteList(&list);*/
+	int x = 10;
+	int* ptr = &x;
+	*ptr = *ptr + 2;
+	printf("%d", *ptr);
+	x += 5;
+	printf("%d", *ptr);
 	return 0;
 }

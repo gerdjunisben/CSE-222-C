@@ -1,2 +1,7 @@
 ﻿  LinkedListDemo.c
+  TheLinkedList.c
+C:\Users\green\Documents\CSE222\CSE-222-C\50423\50423\TheLinkedList.c(85,25): warning C4047: '!=': 'int' differs in levels of indirection from 'void *'
+C:\Users\green\Documents\CSE222\CSE-222-C\50423\50423\TheLinkedList.c(112,15): warning C4047: 'initializing': 'Node *' differs in levels of indirection from 'Node **'
+  Generating Code...
+C:\Users\green\Documents\CSE222\CSE-222-C\50423\50423\TheLinkedList.c(80): warning C4715: 'deleteNode': not all control paths return a value
   50423.vcxproj -> C:\Users\green\Documents\CSE222\CSE-222-C\50423\x64\Debug\50423.exe
